@@ -46,6 +46,7 @@ GEM
     ffi (1.9.14)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hashids (1.0.2)
     i18n (0.7.0)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -93,6 +94,9 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.2.2)
+    random_unique_id (1.1.0)
+      activerecord (>= 3.2.0)
+      activesupport (>= 3.2.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -121,9 +125,11 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  hashids
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.0)
+  random_unique_id
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
