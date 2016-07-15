@@ -4,6 +4,14 @@ GIT
   specs:
     uniquify (0.1.0)
 
+GIT
+  remote: git://github.com/akinomaeni/hashid-rails.git
+  revision: dc5869586f707254fff93c37ed10fc6b67f6d4c1
+  specs:
+    hashid-rails (0.3.2)
+      activerecord (>= 4.0)
+      hashids (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -131,7 +139,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  hashids
+  hashid-rails!
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.0)

@@ -19,7 +19,7 @@ gem 'puma', '~> 3.0'
 # gem 'rack-cors'
 
 gem 'random_unique_id'
-gem 'hashids'
+gem 'hashid-rails', github: 'akinomaeni/hashid-rails'
 gem 'uniquify', github: 'Openbay/uniquify'
 
 group :development, :test do
