@@ -21,6 +21,7 @@ gem 'puma', '~> 3.0'
 gem 'random_unique_id'
 gem 'hashid-rails', github: 'akinomaeni/hashid-rails'
 gem 'uniquify', github: 'Openbay/uniquify'
+gem 'uuidtools'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :uniqifies, param: :token, only: [:index, :show, :create]
 
   resources :rids, param: :rid, only: [:index, :show, :create]
+
+  resources :uuids, only: [:index, :show, :create]
 end

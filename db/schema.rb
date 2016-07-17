@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160717150224) do
+ActiveRecord::Schema.define(version: 20160717162247) do
 
   create_table "hashids", force: :cascade do |t|
     t.string   "title"
@@ -32,6 +32,20 @@ ActiveRecord::Schema.define(version: 20160717150224) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["token"], name: "index_uniqify_examples_on_token", unique: true
+  end
+
+  create_table "uuid_examples", id: nil, force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["id"], name: "sqlite_autoindex_uuid_examples_1", unique: true
+  end
+
+  create_table "uuid_exaples", id: nil, force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["id"], name: "sqlite_autoindex_uuid_exaples_1", unique: true
   end
 
 end
