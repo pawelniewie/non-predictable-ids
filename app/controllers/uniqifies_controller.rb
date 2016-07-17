@@ -9,7 +9,7 @@ class UniqifiesController < ApplicationController
 	end
 
 	def show
-		render json: UniqifyExample.find(params[:token])
+		render json: UniqifyExample.find_by(params.permit(:token))
 	end
 
 end

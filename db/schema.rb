@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160717131910) do
+ActiveRecord::Schema.define(version: 20160717150224) do
 
   create_table "hashids", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "rid_examples", force: :cascade do |t|
+    t.string   "title"
+    t.string   "rid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["rid"], name: "index_rid_examples_on_rid", unique: true
   end
 
   create_table "uniqify_examples", force: :cascade do |t|
